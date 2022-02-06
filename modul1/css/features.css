@@ -1,0 +1,155 @@
+
+
+.features{
+    margin-bottom:100px;
+}
+
+.features__title{
+    margin:0;
+    margin-bottom:50px;
+}
+
+.features__text{
+    margin:0;
+    margin-bottom:100px;
+    text-align: center;
+}
+
+.features__list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features__item{
+    position: relative;
+    margin-bottom:50px;
+    padding-left:260px;
+    padding-right: 50px;
+    padding-top:50px;
+    padding-bottom:33px;
+    width: 48%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+
+.features__item._bg-one{
+    background-image: url('../../images/feature_bg_img_1.png');
+}
+.features__item._bg-two{
+    background-image: url('../../images/feature_bg_img_2.png');
+}
+.features__item._bg-three{
+    background-image: url('../../images/feature_bg_img_3.png');
+}  
+.features__item._bg-four{
+    background-image: url('../../images/feature_bg_img_4.png');
+} 
+
+.features__item:nth-child(even){
+    margin-left: 20px;
+}
+
+.features__item:nth-child(odd){
+    margin-right: 20px;
+}
+
+.features__item img{
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+} 
+
+.feature__title{
+    margin:0;
+    margin-bottom:20px;
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 400;
+    color: #212353;
+}
+
+.feature__text{
+    margin:0;
+    margin-bottom:20px;
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+    color: #4B5D68;
+}
+
+.feature__link{
+    position: relative;
+    padding-right:40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+
+.feature__link::after{
+    content: url('../../images/arrow_right.svg');
+    position: absolute;
+    right:0;
+    top:2px;
+}
+
+
+@media (max-width:1030px){
+    .features__item{
+        width: initial;
+    }
+
+    .features__item._bg-one,
+    .features__item._bg-two,
+    .features__item._bg-three,
+    .features__item._bg-four{
+        background-image: none;
+    }
+
+    .features__item:nth-child(even){
+        margin-left: 0;
+    }
+    
+    .features__item:nth-child(odd){
+        margin-right: 0;
+    }
+}
+
+@media (max-width:576px){
+
+    .features {
+        margin-bottom: 50px;
+    }
+
+    .features__text {
+        margin-bottom: 50px;
+    }
+
+    .features__item{
+        padding:0;
+        margin:0;
+        margin-bottom:50px;
+        width: 100%;
+    }
+
+    .feature__title {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .features__item img {
+        top: 0;
+        left: 0;
+        width: 90px;
+    }
+
+    .feature__text{
+        padding-left: 100px;
+    }
+}
