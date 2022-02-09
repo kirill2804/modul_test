@@ -34,6 +34,7 @@
     background-position: right top;
 }
 
+/* Изображения которые не являются фоном, делать фоном -- плохо */
 
 .features__item._bg-one{
     background-image: url('../../images/feature_bg_img_1.png');
@@ -56,6 +57,7 @@
     margin-right: 20px;
 }
 
+/* Для этого существует flex */
 .features__item img{
     position: absolute;
     margin:auto;
@@ -105,6 +107,7 @@
         width: initial;
     }
 
+    /* Ужасно */
     .features__item._bg-one,
     .features__item._bg-two,
     .features__item._bg-three,
