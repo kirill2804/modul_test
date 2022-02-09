@@ -1,5 +1,6 @@
 body{
     position: relative;
+    /* Указание для всего body min-width не есть хорошо */
     min-width: 320px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
@@ -17,10 +18,12 @@ body{
 ul{
     margin:0;
     padding:0;
+    /* Убирать у всех список стили это плохо */
     list-style: none;
 }
 
 a{
+    /* Убирать у всех a стили это плохо */
     display:inline-block;
     text-decoration: none;
     color:inherit;
@@ -34,6 +37,7 @@ img{
 }
 
 .visually-hidden {
+    /* Не совсем понятно зачем это нужно */
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
@@ -53,6 +57,7 @@ img{
 }
 
 h2{
+    /* Ставить у всех h2 стили это плохо */
     font-size: 40px;
     line-height: 52px;
     text-align: center;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!-- -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,6 +46,7 @@
               <div class="container banner__inner">
                     <div class="banner__content">
                         <h1 class="banner__title">
+                            <!-- TODO: Использование <BR> дурной тон -->
                             Save your data<br> storage here.
                         </h1>
                         <p class="banner__text">
@@ -56,12 +58,14 @@
                         <a  href="#features">Learn more</a>
                         </p>
                     </div>
+                    <!-- TODO: Почему-то изображение сделано с помозью тега <P> и :before, так не нужно, тег IMG для этого существует -->
                     <p class="banner__img"></p>
               </div>
         </section>
 
         <section class="aboutus">
             <div class="container aboutus__box">
+                <!-- TODO: Почему-то изображение сделано с помозью тега <P> и :before, так не нужно, тег IMG для этого существует -->
                 <p class="aboutus__img"></p>
                 <div class="aboutus__content">
                     <h2 id="about" class="aboutus__title">
@@ -85,6 +89,8 @@
                     Some of the features and advantages that we provide for those of you<br> who store data in this Data Warehouse.
                 </p>
                 <ul class="features__list feature">
+                    <!-- TODO: Модификаторы не отражают суть -->
+                    <!-- TODO: Разный стиль ALT'ов -->
                     <li class="features__item _bg-one">
                         <img src="images/feature_img_1.png" alt="features 1">
                         <h3 class="feature__title">Search Data</h3>
@@ -132,6 +138,7 @@
                             </div>
                         </li>
                         <li class="slider__item">
+                            <!-- TODO: Почему-то изображение сделано с помозью тега <P>, так не нужно, тег IMG для этого существует -->
                             <p class="slider__photo">
                                 <img src="images/slide_2.jpg" alt="John Fang">
                             </p>
@@ -145,6 +152,7 @@
                             </div>
                         </li>
                         <li class="slider__item">
+                            <!-- TODO: Почему-то изображение сделано с помозью тега <P>, так не нужно, тег IMG для этого существует -->
                             <p class="slider__photo">
                                 <img src="images/slide_3.jpg" alt="John Fang">
                             </p>
@@ -159,13 +167,16 @@
                         </li>
                     </ul> 
                     <div class="slider__controls controls">
-                        <p class="controls__dots dots">
+                            <!-- TODO: Почему-то изображение сделано с помощью тега <P>, так не нужно, тег IMG для этого существует -->
+                            <!-- TODO: Пустые span'ы, должны быть button's, и также картинки сделаны с помощью css, модификатор dots_active не по БЭМ'у -->
+                            <p class="controls__dots dots">
                             <span class="dots_active"></span>
                             <span></span>
                             <span></span>
                             <span></span>
                         </p>
                         <div class="controls__arrows arrow">
+                                <!-- TODO: Модификаоторы не по БЭМУ, должно быть arrow--hidden -->
                               <button class="arrow__prew"><span class="visually-hidden">предыдущий слайд</span></button>
                               <button class="arrow__next"><span class="visually-hidden">следующий слайд</span></button>
                         </div>   
